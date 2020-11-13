@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ReverseLookupTest {
+
     @Test
     public void test1() {
         // given
@@ -19,6 +20,7 @@ public class ReverseLookupTest {
         // then
         Assert.assertEquals(expectedName, actualName);
     }
+
 
     @Test
     public void test2() {

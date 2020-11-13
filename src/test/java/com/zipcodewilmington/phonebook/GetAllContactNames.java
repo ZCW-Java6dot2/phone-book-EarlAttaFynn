@@ -20,8 +20,13 @@ public class GetAllContactNames {
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
 
+        for (String name : names) {
+            Assert.assertTrue(actualNames.contains(name));
+        }
+
+
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        //Assert.assertTrue(Arrays.asList(names), actualNames);
     }
 
     @Test

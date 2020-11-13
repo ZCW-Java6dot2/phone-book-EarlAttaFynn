@@ -1,6 +1,7 @@
 package com.zipcodewilmington.phonebook;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -8,11 +9,18 @@ import java.util.List;
 import java.util.Map;
 
 public class ConstructorTest {
+    private PhoneBook phoneBook;
+
+    @Before
+    public void setup() {
+        this.phoneBook = new PhoneBook();
+    }
+
     @Test
     public void testNullaryConstructor() {
         // given
+
         // when
-        PhoneBook phoneBook = new PhoneBook();
 
         // then
         Assert.assertTrue(phoneBook.getMap() instanceof HashMap);
